@@ -45,7 +45,7 @@ Add FMElfinderBundle in your composer.json:
 ```js
 {
     "require": {
-        "helios-ag/fm-elfinder-bundle": "1.x"
+        "marcelo-diegues/fm-elfinder-bundle": "dev-master"
     }
 }
 ```
