@@ -13,7 +13,7 @@ Add FMElfinderBundle in your composer.json:
 ```js
 {
     "require": {
-        "marcelo-diegues/fm-elfinder-bundle": "dev-master"
+        "marcelo-diegues/fm-elfinder-bundle": "1.0.1"
     }
 }
 ```

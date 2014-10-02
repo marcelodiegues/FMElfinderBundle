@@ -1,16 +1,20 @@
 {
     "name": "marcelo-diegues/fm-elfinder-bundle",
-    "description": "ElFinder bundle, add ElFinder file manager to your Symfony 2.0 - 2.3 project",
+    "description": "ElFinder bundle, add ElFinder file manager to your Symfony2 project",
     "keywords": ["elfinder","file manager"],
     "type": "symfony-bundle",
-    "homepage": "https://github.com/marcelodiegues/FMElfinderBundle",
+    "homepage": "https://github.com/helios-ag/FMElfinderBundle",
     "license": "MIT",
     "minimum-stability": "dev",
     "authors": [
         {
-            "name": "Marcelo Diegues",
-            "email": "marcelo.diegues.ferreira@gmail.com"
+            "name": "Al Ganiev",
+            "email": "helios.ag@gmail.com"
         },
+        {
+            "name": "Symfony Community",
+            "homepage": "https://github.com/helios-ag/FMElfinderBundle/contributors"
+        }
     ],
     "require": {
         "php":                           ">=5.3.3",
