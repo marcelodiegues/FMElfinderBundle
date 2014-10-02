@@ -1,5 +1,5 @@
 {
-    "name": "marcelo-diegues/fm-elfinder-bundle",
+    "name": "marcelodiegues/fm-elfinder-bundle",
     "description": "ElFinder bundle, add ElFinder file manager to your Symfony2 project",
     "keywords": ["elfinder","file manager"],
     "type": "symfony-bundle",
