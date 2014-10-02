@@ -13,7 +13,9 @@
 <script type="text/javascript" charset="utf-8">
 
     var FileBrowserDialogue = {
-        init: function () {},
+        init: function() {
+            // Here goes your code for setting your custom things onLoad.
+        },
         mySubmit: function (URL) {
 
             var win = tinyMCEPopup.getWindowArg('window');
@@ -36,14 +38,14 @@
             // close popup window
             tinyMCEPopup.close();
         }
-    };
+    }
 
     tinyMCEPopup.onInit.add(FileBrowserDialogue.init, FileBrowserDialogue);
 
     $().ready(function() {
 
-        var f = $('.elfinder').elfinder({
-            url : '{{ path('ef_connect', {'instance': instance }) }}',
+        var f = $('#elfinder').elfinder({
+            url : '{{ path('ef_connect') }}',
             lang : '{{ locale }}',
             getfile : {
                 onlyURL : true,
@@ -57,6 +59,6 @@
         }).elfinder('instance');
     });
 </script>
-<div class="elfinder"></div>
+<div id="elfinder"></div>
 </body>
 </html>

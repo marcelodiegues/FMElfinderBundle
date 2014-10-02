@@ -21,8 +21,8 @@
         var funcNum = getUrlParam('CKEditorFuncNum');
         var mode = getUrlParam('mode');
 
-        var f = $('.elfinder').elfinder({
-            url : '{{path('ef_connect', {'instance': instance })}}'+'?mode='+mode,
+        var f = $('#elfinder').elfinder({
+            url : '{{path('ef_connect')}}'+'?mode='+mode,
             lang : '{{locale}}',
             getFileCallback : function(file) {
                 if (funcNum) {
@@ -35,14 +35,17 @@
         {% if fullscreen %}
         $(window).resize(function(){
             var h = $(window).height();
-            var $ef = $('.elfinder');
-            if($ef.height() != h - 20){
-                $ef.height(h -20).resize();
+
+            if($('#elfinder').height() != h - 20){
+                $('#elfinder').height(h -20).resize();
             }
         });
         {% endif %}
     });
 </script>
-<div class="elfinder"></div>
+<div id="elfinder"></div>
 </body>
 </html>
+
+
+

@@ -11,8 +11,8 @@
 {% endif %}
 <script type="text/javascript" charset="utf-8">
     $().ready(function() {
-        var $f = $('.elfinder').elfinder({
-            url : '{{path('ef_connect', { 'instance': instance } )}}',
+        var $f = $('#elfinder').elfinder({
+            url : '{{path('ef_connect')}}',
             lang : '{{locale}}'
         });
 
@@ -27,6 +27,6 @@
         {% endif %}
     });
 </script>
-<div class="elfinder"></div>
+<div id="elfinder"></div>
 </body>
 </html>

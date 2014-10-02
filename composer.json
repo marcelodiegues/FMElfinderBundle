@@ -1,6 +1,6 @@
 {
-    "name": "helios-ag/fm-elfinder-bundle",
-    "description": "ElFinder bundle, adds ElFinder file manager to your Symfony2 project",
+    "name": "marcelo-diegues/fm-elfinder-bundle",
+    "description": "ElFinder bundle, add ElFinder file manager to your Symfony2 project",
     "keywords": ["elfinder","file manager"],
     "type": "symfony-bundle",
     "homepage": "https://github.com/helios-ag/FMElfinderBundle",
@@ -8,32 +8,23 @@
     "minimum-stability": "dev",
     "authors": [
         {
-            "name": "Al Ganiev",
-            "email": "helios.ag@gmail.com"
+            "name": "Marcelo Diegues",
+            "email": "marcelo.diegues.ferreira@gmail.com"
         },
-        {
-            "name": "Symfony Community",
-            "homepage": "https://github.com/helios-ag/FMElfinderBundle/contributors"
-        }
     ],
     "require": {
         "php":                           ">=5.3.3",
-        "symfony/framework-bundle":      "~2.1",
+        "symfony/symfony":               "*@stable",
+        "sensio/framework-extra-bundle": "*@dev",
         "symfony/twig-bundle":           "~2.0",
-        "helios-ag/fm-elfinder-php-connector": "2.0.*@dev"
-    },
-    "require-dev" : {
-        "symfony/form": "~2.1",
-        "doctrine/doctrine-bundle": "~1.0",
-        "matthiasnoback/symfony-config-test":  "0.*",
-        "matthiasnoback/symfony-dependency-injection-test": "0.*"
+        "helios-ag/fm-elfinder-php-connector": "1.1.1"
     },
     "suggest": {
-        "stfalcon/tinymce-bundle": "TinyMCE Bundle by Stfalcon",
-        "egeloen/ckeditor-bundle": "CKEditor Bundle by Egeloen",
-        "trsteel/ckeditor-bundle": "CKEditor Bundle by trsteel"
+        "stfalcon/tinymce-bundle": "TinyMCE WYSIWYG Editor Bundle by Stfalcon",
+        "Trsteel/ckeditor-bundle": "CKEditor WYSIWYG Editor Bundlefor Symfony2 Project by Trsteel"
     },
     "autoload": {
-        "psr-4": { "FM\\ElfinderBundle\\": "" }
-    }
+        "psr-0": { "FM\\ElfinderBundle": "" }
+    },
+    "target-dir": "FM/ElfinderBundle"
 }
